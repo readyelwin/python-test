@@ -4,21 +4,41 @@
    <head>
 
      <title>Elwin Website</title>
+     <style>
+          @media (min-width: 500px) {
+              h1::before{
+                  content: "Welcome to my website!"
+              }
+
+          }
+
+          @media (max-width: 499px){
+              h1::before{
+                  content: "Welcome!"
+              }
+          }
+          </style>
    </head>
+   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
    <body>
-       <h1 style="color:Blue;text-align:center;">About Me</h1
+       <h1 style="color:Blue;text-align:center;"></h1
        <p>Hello, Everyone! My name is Elwin Ready. One of my intrests is basketball.
           I always love to watch the NBA on TV growing as a kid.I played on a few baskeball teams growing up as a kid and we always had pretty good records
       I will list our records from the years before down below!</p>
 
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Molten_GL7.jpg" height="100" width="125"
-       <p>This is my website</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Molten_GL7.jpg" height="120" width="125">
 
-       <h1>Basketball years</h1>
+
+
+
+
+
+       <h1>Basketball Years</h1>
        <style>
 
           table{
             border: 2px solid black;
+            border-collapse: collapse;
           }
 
           th, td {
@@ -67,7 +87,31 @@
 
         </table>
 
-      <p> I can say what ever I want to</p>
 
+        <ol>
+          <li>2005 Second Place</li>
+          <li>2006 Champions</li>
+          <li>2007 Champions</li>
+          <li>2008 Third Place</li>
+          <li>2009 Second Place</li>
+        </ol>
+
+        <style>
+          @media print {
+              .screen-only{
+                display: none;
+              }
+
+          }
+          </style>
+          <style>
+          .screen-only{
+            font-weight: bold;
+          }
+          </style>
+            <p class= "screen-only" > As you can see we were pretty dominiant back in the day </p>
+            <a href="Family.html">Click Here!</a>
+            <a href = "MySchool.html">Click Here</a>
+            <a href="dream.html">Click please</a>
    </body>
  </html>
